@@ -14,33 +14,33 @@
         <div class="first-child">
             <div class="column first-group">
                 <label for="firstName"> First Name:</label>
-                <input id="firstName" class="basic-input" type="text" placeholder="First Name" name="firstName">
+                <input id="firstName" required class="basic-input" type="text" placeholder="First Name" name="firstName">
                 <label for="secondName"> Second Name:</label>
-                <input id="secondName" class="basic-input" type="text" placeholder="Second Name" name="surname">
+                <input id="secondName" required class="basic-input" type="text" placeholder="Second Name" name="surname">
                 <label for="email"> Email:</label>
-                <input id="email" class="basic-input" type="email" placeholder="Email" name="email">
+                <input id="email" required class="basic-input" type="email" placeholder="Email" name="email">
                 <label for="phone"> Phone:</label>
-                <input id="phone" class="basic-input" type="tel" placeholder="Phone Number" name="phone">
+                <input id="phone" required class="basic-input" type="tel" placeholder="Phone Number" name="phone">
             </div>
             <div class="column ">
                 <label for="deliveryDate"> Delivery Date:</label>
-                <input id="deliveryDate" type="date" placeholder="Phone Number" name="deliveryDate">
+                <input id="deliveryDate" required type="date" placeholder="Phone Number" name="deliveryDate">
                 <p>Payment type:</p>
                 <div class="center">
-                    <input id="cash" type="radio" name="deliveryType">
+                    <input id="cash" required type="radio" name="deliveryType" >
                     <label for="cash">Cash</label>
                 </div>
                 <div class="center">
-                    <input id="card" type="radio" name="deliveryType">
+                    <input id="card"  type="radio" name="deliveryType">
                     <label for="card">Card</label>
                 </div>
-                <label for="deliveryType" class="select-label"> Delivery Type:</label>
-                <select name="deliveryType" id="deliveryType" class="other-inputs">
+                <label for="deliveryType"  class="select-label"> Delivery Type:</label>
+                <select name="deliveryType" required id="deliveryType" class="other-inputs">
                     <option value="car">Car</option>
                     <option value="bike">Bike</option>
                 </select>
                 <div class="row center">
-                    <input id="subscription" type="checkbox" name="subscription">
+                    <input id="subscription" required type="checkbox" name="subscription">
                     <label for="subscription"> Subscribe for updates</label>
                 </div>
             </div>
